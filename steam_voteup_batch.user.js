@@ -1,7 +1,7 @@
-// ==UserScript==
-// @name        SteamÅúÁ¿µãÔŞ½Å±¾
+ï»¿// ==UserScript==
+// @name        Steamæ‰¹é‡ç‚¹èµè„šæœ¬
 // @namespace   com.wt629.steam.voteup
-// @description SteamÅúÁ¿µãÔŞ½Å±¾
+// @description Steamæ‰¹é‡ç‚¹èµè„šæœ¬
 // @include     http://steamcommunity.com/id/*/home/
 // @version     1.0
 // @grant       none
@@ -17,25 +17,25 @@ function all_voteup(){
     // alert(jQuery(this).parent().parent().attr("onclick"));
     var classStr = jQuery(this).parent().parent().attr('class');
     if (classStr != null && classStr.indexOf('active') > 0){
-      // console.log('ÒÑ¾­µãÔŞ¹ı...');
+      // console.log('å·²ç»ç‚¹èµè¿‡...');
       num_noclick ++;
     }else{
       jQuery(this).parent().parent().click();
-      // console.log('µãÔŞ...');
+      // console.log('ç‚¹èµ...');
       num ++;
     }
   });
-  console.log('Ò»¹²' + thumb_up.length + ' µãÔŞ£º' + num + ' ÒÑ¾­µãÔŞ¹ı£º' + num_noclick);
-  alert('Ò»¹²' + thumb_up.length + ' µãÔŞ£º' + num + ' ÒÑ¾­µãÔŞ¹ı£º' + num_noclick);
+  console.log('ä¸€å…±' + thumb_up.length + ' ç‚¹èµï¼š' + num + ' å·²ç»ç‚¹èµè¿‡ï¼š' + num_noclick);
+  alert('ä¸€å…±' + thumb_up.length + ' ç‚¹èµï¼š' + num + ' å·²ç»ç‚¹èµè¿‡ï¼š' + num_noclick);
 };
 */
 /*
 <div class="btn_grey_white_innerfade btn_small btn_uppercase" id="blotter_statuspost_submit" onclick="">
-<span>ÅúÁ¿µãÔŞ</span>
+<span>æ‰¹é‡ç‚¹èµ</span>
 </div>
 */
-var buttonDiv = '&nbsp;&nbsp;<div class="btn_grey_white_innerfade btn_small btn_uppercase" id="blotter_statuspost_submit" onclick="all_voteup();"><span>ÅúÁ¿µãÔŞ</span></div>&nbsp;&nbsp;'
-// ·¢²¼°´Å¥ID:blotter_statuspost_submit
+var buttonDiv = '&nbsp;&nbsp;<div class="btn_grey_white_innerfade btn_small btn_uppercase" id="blotter_statuspost_submit" onclick="all_voteup();"><span>æ‰¹é‡ç‚¹èµ</span></div>&nbsp;&nbsp;'
+// å‘å¸ƒæŒ‰é’®ID:blotter_statuspost_submit
 jQuery('#blotter_statuspost_submit').parent().prepend(buttonDiv);
 var function_all_voteup_str = '<script type="text/javascript">' +
 'function all_voteup(){' +
@@ -45,7 +45,7 @@ var function_all_voteup_str = '<script type="text/javascript">' +
 '    if (classStr != null && classStr.indexOf(\'active\') > 0){' +
 '      num_noclick ++;}else{jQuery(this).parent().parent().click();num ++;}' +
 '  });' +
-"  console.log('Ò»¹²' + thumb_up.length + ' µãÔŞ£º' + num + ' ÒÑ¾­µãÔŞ¹ı£º' + num_noclick);" +
-"  alert('Ò»¹²' + thumb_up.length + ' µãÔŞ£º' + num + ' ÒÑ¾­µãÔŞ¹ı£º' + num_noclick);" +
+"  console.log('ä¸€å…±' + thumb_up.length + ' ç‚¹èµï¼š' + num + ' å·²ç»ç‚¹èµè¿‡ï¼š' + num_noclick);" +
+"  alert('ä¸€å…±' + thumb_up.length + ' ç‚¹èµï¼š' + num + ' å·²ç»ç‚¹èµè¿‡ï¼š' + num_noclick);" +
 '};</script>';
 jQuery('body').append(function_all_voteup_str);
