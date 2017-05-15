@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name        Steam批量点赞脚本
 // @namespace   com.wt629.steam.voteup.batch
-// @description Steam批量点赞脚本
+// @description Steam批量点赞脚本,在steam动态页面上添加批量点赞按钮.
 // @include     http://steamcommunity.com/id/*/home/
 // @version     1.2
 // ==/UserScript==
