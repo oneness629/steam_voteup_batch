@@ -3,8 +3,7 @@
 // @namespace   com.wt629.steam.voteup.batch
 // @description Steam批量点赞脚本
 // @include     http://steamcommunity.com/id/*/home/
-// @version     1.0
-// @grant       none
+// @version     1.2
 // ==/UserScript==
 var buttonDiv = '&nbsp;&nbsp;<div class="btn_grey_white_innerfade btn_small btn_uppercase" id="blotter_statuspost_submit" onclick="all_voteup();"><span>批量点赞</span></div>&nbsp;&nbsp;'
 jQuery('#blotter_statuspost_submit').parent().prepend(buttonDiv);
